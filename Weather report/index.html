@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="script.js"></script>
+
+    <header>
+        <h1>Weather report</h1>
+    </header>
+    
+    <div class="grid">
+        <form action="#" class="form" id="form">
+            <div class="group">
+                <input type="text" class="form-input" id="text-input" placeholder="City name" required>
+                <button onclick="fetch_weather()" id="search-btn">Search</button><br>
+                
+                <h2 class="city">City: </h2>
+
+                <div class="temperature-block">
+                    <img src="images/temperature.png">
+                    <h2 class="temperature">Temp: </h2>
+                </div>
+                <!-- <h2 class="temperature">Temp: </h2> -->
+                
+                <h3 class="max-min">Max/Min temp: </h3>
+
+                <div class="weather-description">
+
+                    <div class="column">
+                        <img id="sky-icon" src="">
+                        <p class="sky">Sky: </p>
+                    </div>
+
+                    <div class="column">
+                        <img src="images/wind.png">
+                        <p class="wind">Wind: </p>
+                    </div>
+
+                    <div class="column">
+                        <img src="images/humidity.png">
+                        <p class="humidity">Humidity: </p>
+                    </div>
+
+                    <div class="column">
+                        <img src="images/pressure.png">
+                        <p class="pressure">Pressure: </p>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+    <div class="grid-close" id="close">
+        <span></span>
+    </div>
+    
+</body>
+
+</html>
